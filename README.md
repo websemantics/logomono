@@ -1,2 +1,23 @@
-# logomono
-Tester page for logomono
+```
+ ___      _______  _______  _______
+|   |    |       ||       ||       |
+|   |    |   _   ||    ___||   _   |
+|   |    |  | |  ||   | __ |  | |  |
+|   |___ |  |_|  ||   ||  ||  |_|  |
+|       ||       ||   |_| ||       |
+|_______||_______||_______||_______|
+ __   __  _______  __    _  _______
+|  |_|  ||       ||  |  | ||       |
+|       ||   _   ||   |_| ||   _   |
+|       ||  | |  ||       ||  | |  |
+|       ||  |_|  ||  _    ||  |_|  |
+| ||_|| ||       || | |   ||       |
+|_|   |_||_______||_|  |__||_______|
+```
+> Tester page for logomono
+
+[View](http://websemantics.github.io/logomono/)
+
+## Credits
+
+[Logomono](http://logomono.com/), Bare-bones, single color, SVG logos.
