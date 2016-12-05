@@ -12,9 +12,8 @@
 
 [View live](http://websemantics.github.io/logomono/)
 
-## Screenshot
-
-![](./img/screenshot.png)
+| ![](./img/screenshot.png) |
+|---|
 
 ## License
 
