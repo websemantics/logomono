@@ -1,0 +1,368 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:200,500);
+.code-sample,
+code, pre {
+  font-family: 'Source Code Pro';
+}
+
+p code{ font-size:.8rem;}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+  color: #456;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 50em;
+  padding: 2rem 1rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+svg, path, rect, ellipse, polygon, text {
+  fill: currentcolor;
+}
+
+.example {
+  padding: 2rem;
+}
+
+.example path {
+  transition: all 1s ease;
+}
+
+.example svg {
+  margin: 4rem auto;
+  display: block;
+  max-height: 12em;
+  width: 100%;
+  max-width: 30em;
+  margin: 5rem auto;
+}
+
+.only-dark-background {
+  display: block !important;
+  /*important is appropriate*/
+  opacity: 0;
+}
+
+.example:hover {
+  background-color: #456;
+  color: #fff;
+}
+
+.example:hover .only-dark-background {
+  display: block !important;
+  opacity: 1;
+}
+
+.example:hover .only-light-background {
+  opacity: 0;
+}
+
+#invert:checked ~ div .only-dark-background {
+  display: block !important;
+  opacity: 1;
+}
+
+#invert:checked ~ div .only-light-background {
+  opacity: 0;
+}
+
+#invert:checked ~ .wrapper {
+  color: #fff;
+  background-color: #456;
+}
+
+#invert:checked ~ div header, #invert:checked ~ div footer {
+  background-color: #fff;
+  color: #456;
+}
+
+.code-sample {
+  border: .2em solid;
+  overflow: auto;
+  padding: 2em;
+}
+
+.code-sample > div {
+  line-height: 3em;
+}
+
+.code-sample span {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.code-sample .element {
+  display: block;
+  padding-top: 2em;
+}
+
+.code-sample .attribute {
+  display: block;
+  padding-left: 4.5em;
+}
+
+.code-sample .element > .attribute:first-child {
+  display: inline;
+  padding-left: 1em;
+}
+
+.code-sample .value {
+  position: relative;
+  padding-left: 0em;
+}
+
+.code-sample span em {
+  user-select: none;
+  -webkit-user-select: none;
+  position: absolute;
+  bottom: -0em;
+  display: block;
+  font-size: .6em;
+  padding: 0 .5em;
+  height: 1.5em;
+  line-height: 1.5em;
+  font-family: 'Work Sans', sans-serif;
+  font-style: normal;
+  opacity: .5;
+  left: 0;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.code-sample .value.coords {
+  opacity: .5;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.github-link, label[for="invert"], body > label {
+  background-color: #456;
+  z-index: 9;
+  cursor: pointer;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  right: 0;
+  border: 0.2em solid;
+  font-size: 1rem;
+  padding: 0 1rem;
+  margin: 0;
+  font-weight: 600;
+  -webkit-user-select: none;
+  user-select: none;
+  text-transform: uppercase;
+  text-align: center;
+  width: 8em;
+  height: 3rem;
+  line-height: 2.75rem;
+  display: block;
+}
+
+body > input[type="radio"]:checked + label {
+  display: none;
+  opacity: 0;
+}
+
+.graphic {
+  fill: currentcolor;
+  transform: scale(0.7);
+  animation: 1.5s spin cubic-bezier(0.25, 1.5, 0, 2) infinite;
+  transform-origin: 50% 50%;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(-10deg) scale(0.7);
+  }
+  50% {
+    transform: rotate(100deg) scale(0.7);
+  }
+  100% {
+    transform: rotate(-10deg) scale(0.7);
+  }
+}
+.smear {
+  fill: none;
+  stroke: currentcolor;
+  stroke-width: 20;
+  stroke-dasharray: 400, 400;
+  stroke-linecap: round;
+  stroke-dashoffset: 400;
+  opacity: 1;
+  animation: 1.5s smear cubic-bezier(0.5, 0.5, 0, 0) infinite;
+}
+
+@keyframes smear {
+  0% {
+    stroke-dashoffset: 750;
+  }
+  2% {
+    stroke-dashoffset: 750;
+  }
+  2% {
+    stroke-dashoffset: 420;
+  }
+  49% {
+    stroke-dashoffset: 90;
+  }
+  51% {
+    stroke-dashoffset: 400;
+  }
+  100% {
+    stroke-dashoffset: 750;
+  }
+}
+
+.intro p, .intro h2 {
+  text-align: center;
+}
+
+.safe-viewbox {
+  position: relative;
+  text-align: center;
+  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: center;
+  height: 20em;
+}
+
+.safe-viewbox svg {
+  height: 18em;
+  width: 98%;
+  border: .1em solid;
+  animation: viewboxey 2s ease-out alternate infinite;
+}
+
+.safe-viewbox svg path {
+  fill-opacity: 0.95;
+}
+
+.tutorial {
+  text-align: center;
+}
+
+.tutorial .options svg {
+  width: 24%;
+  margin: 0;
+  height: 5em;
+}
+
+code {
+  padding: .2em;
+  opacity: .7;
+}
+
+@keyframes viewboxey {
+  0% {
+    height: 6em;
+  }
+  100% {
+    width: 8em;
+  }
+}
+.boxes {
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.boxes svg {
+  position: relative;
+  width: 17em;
+  height: 10em;
+  display: inline-block;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+@media (max-width: 50em) {
+  h3 {
+    font-size: 9vw;
+  }
+
+  .process label {
+    display: block;
+    padding: .5rem 0rem;
+    position: relative;
+    border: none;
+    height: auto;
+    line-height: none;
+    text-align: center;
+  }
+}
+@media (min-width: 50em) {
+  .boxes svg:nth-child(odd) {
+    margin-right: 6em;
+  }
+
+  .process label {
+    display: inline-block;
+    padding: 3rem 0rem;
+    padding-top: 4rem;
+    position: relative;
+    border: none;
+    height: auto;
+    line-height: none;
+    width: 19%;
+    text-align: center;
+  }
+
+  .process label:after {
+    content: "→";
+    opacity: .25;
+    position: absolute;
+    top: 1em;
+    left: 0%;
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 300;
+  }
+
+  .process label:hover {
+    background-color: #456;
+    color: #fff;
+  }
+
+  .process label:hover:after {
+    opacity: 1;
+  }
+}
+header {
+  position: relative;
+  z-index: 2;
+}
+
+.wrapper:after {
+  content: "logomono";
+  border-bottom: .2em solid;
+  color: #456;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  content: "logomono";
+  text-align: center;
+  font-weight: 600;
+  line-height: 3.2rem;
+  width: 100%;
+  height: 3.2rem;
+  background-color: #fff;
+}
+
+#invert:checked ~
+.wrapper:after {
+  background-color: #456;
+  color: #fff;
+}
