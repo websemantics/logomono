@@ -1,23 +1,21 @@
 ```
- ___      _______  _______  _______
-|   |    |       ||       ||       |
-|   |    |   _   ||    ___||   _   |
-|   |    |  | |  ||   | __ |  | |  |
-|   |___ |  |_|  ||   ||  ||  |_|  |
-|       ||       ||   |_| ||       |
-|_______||_______||_______||_______|
- __   __  _______  __    _  _______
-|  |_|  ||       ||  |  | ||       |
-|       ||   _   ||   |_| ||   _   |
-|       ||  | |  ||       ||  | |  |
-|       ||  |_|  ||  _    ||  |_|  |
-| ||_|| ||       || | |   ||       |
-|_|   |_||_______||_|  |__||_______|
+ _       ___    ____   ___   ___ ___   ___   ____    ___  
+| |     /   \  /    | /   \ |   |   | /   \ |    \  /   \
+| |    |     ||   __||     || _   _ ||     ||  _  ||     |
+| |___ |  O  ||  |  ||  O  ||  \_/  ||  O  ||  |  ||  O  |
+|     ||     ||  |_ ||     ||   |   ||     ||  |  ||     |
+|     ||     ||     ||     ||   |   ||     ||  |  ||     |
+|_____| \___/ |___,_| \___/ |___|___| \___/ |__|__| \___/
+
 ```
-> Tester page for logomono
+> Tester page for [Logomono](http://logomono.com/), bare-bones, single color, SVG logos.
 
 [View](http://websemantics.github.io/logomono/)
 
-## Credits
+## Screenshot
 
-[Logomono](http://logomono.com/), Bare-bones, single color, SVG logos.
+![./img/screenshot.png]
+
+## License
+
+Copyright (c) Web Semantics, Inc.
