@@ -14,7 +14,7 @@
 
 ## Screenshot
 
-![./img/screenshot.png]
+![](./img/screenshot.png)
 
 ## License
 
