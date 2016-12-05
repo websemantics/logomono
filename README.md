@@ -10,7 +10,7 @@
 ```
 > Tester page for [Logomono](http://logomono.com/), bare-bones, single color, SVG logos.
 
-[View](http://websemantics.github.io/logomono/)
+[View live](http://websemantics.github.io/logomono/)
 
 ## Screenshot
 
